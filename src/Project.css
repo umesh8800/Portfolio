@@ -1,0 +1,303 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family:Poppins;
+}
+p{
+    font-size: 24px;
+    line-height: 50px;
+}
+.navbar{
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color:transparent;
+    width: 100%;
+    height: 70px;
+    z-index: 1;
+}
+
+.nav{
+    display: flex;
+    justify-content: right;
+    margin-right: 10%;
+    
+    
+}
+.logo {
+    flex: 1 1 auto;
+    margin-left: 4%;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: bold;
+    font-size: 25px;
+    font-family: 'Cinzel', serif;
+    text-decoration: none;
+
+}
+img{
+    width: 20%;
+}
+.nav a{
+    margin: 15px;
+    color:aqua;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: -100px ;
+}
+a:hover{
+    color:yellow;
+}
+.banner-area{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.about-area, .port-area, .service-area, .contact-area{
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 100%;
+    height: 700px;
+}
+.text-part{
+    width: 65%;
+    height: 80%;
+}        
+.about-area{
+    background-color:gray;
+}
+.port-area{
+    background-color:#b6c0c0 ;
+    color: rgb(17, 16, 16);
+}
+.service-area{
+    background-color:lightseagreen;
+}
+.contact-area{
+    background-color: gray;
+    color: #fff;
+}
+.responsive{
+    height: 100px;
+    width: 100px;
+    border-radius:10% ;
+}
+.main{
+    justify-content:space-around;
+    display: flex;
+       
+    
+}
+.main img{
+    width: 170px;
+    height: 170px;
+    border-radius: 10%;
+
+}
+a{
+    color: rgb(35, 224, 10);
+
+}
+
+
+@media (max-width:678px){
+    .nav{
+        font-size:8px ;
+        margin: 5px;
+        margin-right: -2%;
+    }
+    .main img{
+        width: 110px;
+        height:110px ;
+    }
+    .logo{
+        font-size: 10px;
+        
+    }
+    .text-part p{
+        font-size: 16px;
+    }
+    .text-part h1{@media (max-width:873px){
+        .nav a{
+            font-size:13px ;
+            padding: 2px;
+        }
+        .logo{
+            font-size: 16px;
+            
+        }
+      
+    }
+        font-size:20px ;
+    }
+    .main img{
+        width: 100px;
+        height:100px ;
+    }
+
+}
+
+@media (max-width:590px){
+    .nav{
+        font-size:10px ;
+        margin-right: -2%;
+        
+        
+    }
+    .logo{
+        font-size: 10px;
+        /* margin-right: -6%; */
+        margin-left: 0.5rem !important ;
+         
+    }
+    .text-part p{
+        font-size: 14px;
+    }
+    .text-part h1{
+        font-size:17px ;
+    }
+
+}
+
+@media (max-width:381px){
+    .nav{
+        font-size:8px ;
+    }
+    .logo{
+        font-size: 8px  !important;
+    }
+    .text-part p{
+        font-size: 13px;
+    }
+    .text-part h1{
+        font-size:20px ;
+    }
+    .nav a{
+        padding: 0px;
+    }
+
+}
+@media (max-width:873px){
+    .nav a{
+        font-size:13px ;
+        padding: 2px;
+    }
+    .logo{
+        font-size: 16px;
+        
+    }
+  
+}
+
+@media (max-width:790px){
+    .nav a{
+        font-size:10px ;
+        padding: 2px;
+    }
+    .logo{
+        font-size: 12px;
+        
+    }
+  
+}
+
+/* Extra from my project */
+
+@media (max-width:500px){
+   
+
+   .home{
+       margin-left: 0rem;
+   }
+   .about{
+        margin-left: -1.5rem;
+   }
+   .portfolio{
+         margin-left: -1.5rem;
+       padding-left: 0;
+   }
+
+   .friends{
+       margin-left: -1.5rem;
+   }
+
+   .projects{
+    margin-left: -1.5rem; 
+   }
+
+}
+
+
+@media (max-width:355px){
+    .navbar .logo{
+        font-size: 6px;
+    }
+    .nav{
+        font-size: 5px;
+    }
+
+    .home{
+        margin-left: -1rem;
+    }
+    .about{
+         margin-left: -1.8rem;
+    }
+    .portfolio{
+          margin-left:-1.8rem;
+        padding-left: 0;
+    }
+ 
+    .friends{
+        margin-left:-1.8rem;
+    }
+ 
+    .projects{
+     margin-left: -1.8rem; 
+    }
+ 
+ 
+
+}
+
+/* Animation  */
+
+.logo{
+    animation: color-change 1s infinite;
+  }
+  
+  @keyframes color-change {
+    0% { color:aqua; }
+    25% { color: yellow; }
+    50% { color: hsl(303, 100%, 50%); }
+    75% { color: chartreuse; }
+    100% { color: #d5e7d6; }
+  }
+
+
+
+
+
+
+
+
